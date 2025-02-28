@@ -49,9 +49,3 @@ The project will loop infinitely until the user inputs "exit", at which point th
 What's Missing:
 The only thing that was not implemented was piping.
 Oh yeah also the jobs command wasn't implemented, but there isn't an easy workaround for that one unlike cd.
-# Names : Blair Bourque and Brandon Fortes
-
-How it works:
-Our CSC 222 Project is a coding project to which a C-Program will act as a Linux Terminal and execute Linux commands. The program is called Techshell.c, and once executed will run given Linux Commands repeatedly. 
-
-Implementation:
