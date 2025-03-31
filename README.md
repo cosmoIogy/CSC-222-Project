@@ -23,13 +23,13 @@ Parsing:
         A char pointer for output files.
         And an array of char arrays for every other argument
     
-    The parsing method will first split the user's input by spaces using strtok().
-        This also returns the first argument, which is stored.
-    Next, a loop is entered and will loop until there are no more arguments.
-    If the current argument is a < or >, it will store the next argument in either inputFile or outputFile, respectively.
-    Otherwise, it will store the argument into the ShellCommand's arguments array.
-    It uses strtok at the end of each loop to move on to the next argument.
-    After the loop finishes, it adds a NULL to the next item in the array, as execvp needs the arguments to be null terminated.
+   The parsing method will first split the user's input by spaces using strtok().
+   This also returns the first argument, which is stored.
+   Next, a loop is entered and will loop until there are no more arguments.
+   If the current argument is a < or >, it will store the next argument in either inputFile or outputFile, respectively.
+   Otherwise, it will store the argument into the ShellCommand's arguments array.
+   It uses strtok at the end of each loop to move on to the next argument.
+   After the loop finishes, it adds a NULL to the next item in the array, as execvp needs the arguments to be null terminated.
 
 Execution:
     In the execution step, the goal is to interpret the ShellCommand into whichever task needs to be executed.
